@@ -1,0 +1,13 @@
+/* Smooth navbar animation */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Icon transition */
+.navbar-toggler svg {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Prevent content from hiding behind fixed navbar */
+
+

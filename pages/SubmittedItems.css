@@ -1,0 +1,30 @@
+.submitted-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.103);
+  backdrop-filter: blur(50px);
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+
+.main-content {
+  margin-top: 80px;
+}
+.submitted-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .card {
+    font-size: 0.9rem;
+  }
+}

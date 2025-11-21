@@ -1,0 +1,30 @@
+
+.user-home-container {
+  margin-top: 65px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.452);
+  background-color: rgba(255, 250, 240, 0.315); 
+  backdrop-filter: blur(8px); 
+  border:solid 1px skyblue;
+}
+
+.action-btn {
+  font-size: 1.1rem;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  margin-top: auto;
+}

@@ -1,0 +1,125 @@
+/* ======================================================
+   GLOBAL LAYOUT FIXES
+====================================================== */
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fix content because navbar is fixed */
+.content {
+  margin-left: 250px;
+  padding-top: 80px !important;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .content {
+    margin-left: 0;
+  }
+}
+
+/* ======================================================
+   SIDEBAR STYLING
+====================================================== */
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  top: 56px; /* height of navbar */
+  left: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidebar .nav-link {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #0d6efd;
+}
+
+/* Mobile collapsed */
+.show-sidebar {
+  transform: translateX(0);
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-260px);
+  }
+}
+
+/* ======================================================
+   DASHBOARD CARDS
+====================================================== */
+
+.dashboard-card {
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Icon styling */
+.dashboard-card svg {
+  opacity: 0.9;
+}
+
+/* ======================================================
+   RECENT ACTIVITY LIST
+====================================================== */
+
+.list-group-item {
+  border-radius: 8px !important;
+  margin-bottom: 8px;
+  padding: 14px 18px;
+}
+
+.list-group-item strong {
+  color: #0d6efd;
+}
+
+/* Hover effect */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* ======================================================
+   TITLES & HEADERS
+====================================================== */
+
+h2, h4 {
+  font-weight: 700;
+}
+
+/* ======================================================
+   RESPONSIVE FIXES
+====================================================== */
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    padding: 20px;
+  }
+
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .list-group-item small {
+    margin-top: 6px;
+  }
+}

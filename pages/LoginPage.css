@@ -1,0 +1,24 @@
+/* Navbar animation */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler svg {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background-color: #ffffff70;
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    padding: 1.8rem;
+  }
+}
+
+/*=============Main Content*/

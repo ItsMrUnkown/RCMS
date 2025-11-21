@@ -1,0 +1,45 @@
+:root, #root{
+  background-image: url("../src/pages/image/26660.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container{
+  background-color: rgba(255, 255, 255, 0.315);
+  margin:none;
+  border-radius: 12px;
+  border:solid 1px skyblue;
+  backdrop-filter: blur(8px);
+  box-shadow:5px 5px 15px rgba(128, 128, 128, 0.452);
+  max-width: 700px;
+  padding: 20px;
+}
+/*==================NavBar*/
+/* Smooth navbar animation */
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler svg {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hero Section Adjustment */
+.txt {
+  color: #333;
+}
+
+/* Adjust padding for small screens (so navbar doesn’t overlap content) */
+@media (max-width: 992px) {
+  section {
+    padding-top: 6rem;
+  }
+}
+
+/*==================Main Content*/
+section{
+  height:37rem;
+}
+footer {
+  margin-top: auto;
+}
+
